@@ -1,8 +1,8 @@
 .hangmanContainer{
     width: 600px;
     height: 400px;
-    
     position: relative;
+    margin: 0 auto;
 }
 
 .base{
@@ -117,4 +117,39 @@
     height: 50px;
     transform: rotate(315deg);
    
+}
+
+.alphabetContainer,
+.guessContainer{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.letter{
+    padding: 20px;
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.letter.clicked{
+    padding:20px;
+    border:1px solid grey;
+    background:#e6e6e6;
+    cursor:auto;
+    margin:10px;
+    border-radius:5px;
+    }
+
+
+.guessLetter{
+    padding: 20px;
+    font-size: 30px;
+    border-bottom: 1px solid black;
+    margin: 10px;
+    min-height: 36px;
 }
